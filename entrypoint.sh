@@ -18,7 +18,7 @@ if ARGV[0].empty?
   exit(1)
 end
 
-message = ARGV[0]
+message = File.read(ARGV[0])
 check_duplicate_msg = ARGV[1]
 delete_prev_regex_msg = ARGV[2]
 duplicate_msg_pattern = ARGV[3]
